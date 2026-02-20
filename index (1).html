@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>AutoDiag Estructures</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+}
+
+/* HEADER */
+header {
+    background: #1e2a38;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* MENU */
+nav {
+    background: #2c3e50;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd000;
+}
+
+/* SECTIONS */
+section {
+    padding: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* PRODUCTOS */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.price {
+    color: #e67e22;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* VIDEOS */
+.video-container {
+    display: grid;
+    gap: 20px;
+}
+
+/* FOOTER */
+footer {
+    background: #1e2a38;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>AutoDiag Estructures</h1>
+    <p>Equipos profesionales de diagnóstico estructural para vehículos</p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#productos">Productos</a>
+    <a href="#videos">Tutoriales</a>
+    <a href="#contacto">Contacto</a>
+</nav>
+
+<section id="inicio">
+    <h2>Bienvenidos</h2>
+    <p>
+    AutoDiag Estructures es una empresa especializada en la venta de equipos de diagnóstico
+    de daños estructurales en vehículos. Nuestros sistemas permiten detectar deformaciones,
+    torsiones y desalineaciones del chasis después de un accidente.
+    </p>
+
+    <ul>
+        <li>Sistemas de medición profesional</li>
+        <li>Equipos homologados</li>
+        <li>Alta precisión</li>
+        <li>Soporte técnico</li>
+    </ul>
+</section>
+
+<section id="productos">
+    <h2>Productos</h2>
+
+    <div class="products">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e">
+            <h3>Sistema de medición 3D</h3>
+            <p>Sistema electrónico para verificar la geometría del vehículo comparando con datos del fabricante.</p>
+            <p>Detecta torsiones, desviaciones y deformaciones del chasis.</p>
+            <p class="price">8.500 €</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc">
+            <h3>Galga telescópica (Tram Gauge)</h3>
+            <p>Herramienta manual para medir distancias entre puntos estructurales.</p>
+            <p>Ideal para diagnósticos rápidos y comprobaciones de simetría.</p>
+            <p class="price">320 €</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9">
+            <h3>Sistema de alineación láser</h3>
+            <p>Equipo de medición por láser para detectar desviaciones laterales y torsiones.</p>
+            <p class="price">2.100 €</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1625047509248-ec889cbff17f">
+            <h3>Torre hidráulica de estiraje</h3>
+            <p>Equipo profesional para corregir deformaciones estructurales del vehículo.</p>
+            <p class="price">3.900 €</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="videos">
+    <h2>Tutoriales</h2>
+
+    <div class="video-container">
+
+        <iframe width="100%" height="315"
+        src="https://www.youtube.com/embed/3Z5bR7GqY1A"
+        frameborder="0" allowfullscreen></iframe>
+
+        <iframe width="100%" height="315"
+        src="https://www.youtube.com/embed/9QwFz9Tz7yA"
+        frameborder="0" allowfullscreen></iframe>
+
+    </div>
+</section>
+
+<section id="contacto">
+    <h2>Contacto</h2>
+    <p>Email: info@autodiag-estructures.com</p>
+    <p>Teléfono: +34 600 000 000</p>
+    <p>Horario: Lunes a Viernes – 9:00 a 18:00</p>
+</section>
+
+<footer>
+    AutoDiag Estructures © 2026
+</footer>
+
+</body>
+</html>
